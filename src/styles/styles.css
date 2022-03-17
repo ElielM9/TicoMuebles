@@ -212,7 +212,7 @@ img {
     background-image: linear-gradient(to bottom, transparent 50%, var(--azul) 50%, var(--azul)), url(../assets/img/nosotros.jpg);
     background-repeat: no-repeat;
     background-position: center, top left;
-    background-size: 100%, 70rem;
+    background-size: 100%, 85rem;
 }
 
 @media(min-width: 768px) {
@@ -402,7 +402,7 @@ img {
 /* SOBRE NOSOTROS */
 .sobre-nosotros {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 4rem;
 }
 
@@ -460,7 +460,7 @@ img {
 }
 
 .contenido-entrada {
-    width: 65rem;
+    max-width: 65rem;
     margin: 0 auto;
 }
 
