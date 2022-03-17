@@ -211,8 +211,8 @@ img {
 .nosotros {
     background-image: linear-gradient(to bottom, transparent 50%, var(--azul) 50%, var(--azul)), url(../assets/img/nosotros.jpg);
     background-repeat: no-repeat;
-    background-position: center, top left;
-    background-size: 100%, 85rem;
+    background-position:  center top left;
+    background-size: 100%, 88rem;
 }
 
 @media(min-width: 768px) {
