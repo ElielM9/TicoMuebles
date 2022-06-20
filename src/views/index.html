@@ -15,10 +15,12 @@
   </head>
   <body>
     <header>
-      <h1 class="titulo text-center">Tico<span>Muebles</span></h1>
+      <h1 class="header__titulo">
+        Tico<span class="header__titulo--azul">Muebles</span>
+      </h1>
     </header>
-    <div class="nav-container">
-      <nav class="nav container">
+    <div class="nav-contenedor">
+      <nav class="nav nav__contenedor">
         <a class="nav__link" href="index.html">Inicio</a>
         <a class="nav__link" href="nosotros.html">Nosotros</a>
         <a class="nav__link" href="tienda.html">Tienda</a>
@@ -28,14 +30,15 @@
       </nav>
     </div>
     <div class="hero"></div>
-    <section class="container categorias">
-      <h2 class="text-center">Categorías</h2>
+    <section class="categorias categorias__contenedor">
+      <h2 class="categorias__titulo">Categorías</h2>
       <div class="categorias__lista">
         <div class="categoria">
           <picture>
             <source srcset="./assets/img/categoria1.avif" type="image/avif" />
             <source srcset="./assets/img/categoria1.webp" type="image/webp" />
             <img
+              class="categoria__img"
               loading="lazy"
               width="500"
               height="300"
@@ -43,13 +46,14 @@
               alt="Imagen-Categoria"
             />
           </picture>
-          <a href="#">Oficina</a>
+          <a class="categoria__btn" href="#">Oficina</a>
         </div>
         <div class="categoria">
           <picture>
             <source srcset="./assets/img/categoria2.avif" type="image/avif" />
             <source srcset="./assets/img/categoria2.webp" type="image/webp" />
             <img
+              class="categoria__img"
               loading="lazy"
               width="500"
               height="300"
@@ -57,13 +61,14 @@
               alt="Imagen-Categoria"
             />
           </picture>
-          <a href="#">Hogar</a>
+          <a class="categoria__btn" href="#">Hogar</a>
         </div>
         <div class="categoria">
           <picture>
             <source srcset="./assets/img/categoria3.avif" type="image/avif" />
             <source srcset="./assets/img/categoria3.webp" type="image/webp" />
             <img
+              class="categoria__img"
               loading="lazy"
               width="500"
               height="300"
@@ -71,15 +76,15 @@
               alt="Imagen-Categoria"
             />
           </picture>
-          <a href="#">Cocina</a>
+          <a class="categoria__btn" href="#">Cocina</a>
         </div>
       </div>
     </section>
-    <section class="nosotros">
-      <div class="container nosotros__grid">
-        <div class="nosotros__texto">
-          <h2>Sobre nosotros</h2>
-          <p>
+    <section class="sobre-nosotros">
+      <div class="sobre-nosotros__contenedor sobre-nosotros__grid">
+        <div class="sobre-nosotros__texto">
+          <h2 class="sobre-nosotros__titulo">Sobre nosotros</h2>
+          <p class="sobre-nosotros__parrafo">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio
             veritatis ullam quasi voluptas aspernatur quidem, magnam velit
             excepturi minus animi tenetur dolorem asperiores placeat dolorum.
@@ -88,14 +93,15 @@
         </div>
       </div>
     </section>
-    <main class="main container">
-      <h2 class="text-center">Nuestros productos</h2>
+    <main class="main main__contenedor">
+      <h2 class="productos__titulo">Nuestros productos</h2>
       <div class="productos">
-        <div class="productos__producto">
+        <div class="producto">
           <picture>
             <source srcset="./assets/img/producto1.avif" type="image/avif" />
             <source srcset="./assets/img/producto1.webp" type="image/webp" />
             <img
+              class="producto__img"
               loading="lazy"
               width="500"
               height="300"
@@ -103,21 +109,22 @@
               alt=""
             />
           </picture>
-          <div class="productos__texto">
-            <h3>Producto</h3>
-            <p>
+          <div class="producto__contenido">
+            <h3 class="producto__titulo">Producto</h3>
+            <p class="producto__parrafo">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo, minus et. Quis.
             </p>
-            <p class="precio">$2,000</p>
-            <a class="btn" href="#">Agregar al carrito</a>
+            <p class="producto__precio">$2,000</p>
+            <a class="producto__btn" href="#">Agregar al carrito</a>
           </div>
         </div>
-        <div class="productos__producto">
+        <div class="producto">
           <picture>
             <source srcset="./assets/img/producto2.avif" type="image/avif" />
             <source srcset="./assets/img/producto2.webp" type="image/webp" />
             <img
+              class="producto__img"
               loading="lazy"
               width="500"
               height="300"
@@ -125,21 +132,22 @@
               alt=""
             />
           </picture>
-          <div class="productos__texto">
-            <h3>Producto</h3>
-            <p>
+          <div class="producto__contenido">
+            <h3 class="producto__titulo">Producto</h3>
+            <p class="producto__parrafo">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo, minus et. Quis.
             </p>
-            <p class="precio">$2,000</p>
-            <a class="btn" href="#">Agregar al carrito</a>
+            <p class="producto__precio">$2,000</p>
+            <a class="producto__btn" href="#">Agregar al carrito</a>
           </div>
         </div>
-        <div class="productos__producto">
+        <div class="producto">
           <picture>
             <source srcset="./assets/img/producto3.avif" type="image/avif" />
             <source srcset="./assets/img/producto3.webp" type="image/webp" />
             <img
+              class="producto__img"
               loading="lazy"
               width="500"
               height="300"
@@ -147,21 +155,22 @@
               alt=""
             />
           </picture>
-          <div class="productos__texto">
-            <h3>Producto</h3>
-            <p>
+          <div class="producto__contenido">
+            <h3 class="producto__titulo">Producto</h3>
+            <p class="producto__parrafo">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo, minus et. Quis.
             </p>
-            <p class="precio">$2,000</p>
-            <a class="btn" href="#">Agregar al carrito</a>
+            <p class="producto__precio">$2,000</p>
+            <a class="producto__btn" href="#">Agregar al carrito</a>
           </div>
         </div>
-        <div class="productos__producto">
+        <div class="producto">
           <picture>
             <source srcset="./assets/img/producto4.avif" type="image/avif" />
             <source srcset="./assets/img/producto4.webp" type="image/webp" />
             <img
+              class="producto__img"
               loading="lazy"
               width="500"
               height="300"
@@ -169,21 +178,22 @@
               alt=""
             />
           </picture>
-          <div class="productos__texto">
-            <h3>Producto</h3>
-            <p>
+          <div class="producto__contenido">
+            <h3 class="producto__titulo">Producto</h3>
+            <p class="producto__parrafo">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo, minus et. Quis.
             </p>
-            <p class="precio">$2,000</p>
-            <a class="btn" href="#">Agregar al carrito</a>
+            <p class="producto__precio">$2,000</p>
+            <a class="producto__btn" href="#">Agregar al carrito</a>
           </div>
         </div>
-        <div class="productos__producto">
+        <div class="producto">
           <picture>
             <source srcset="./assets/img/producto5.avif" type="image/avif" />
             <source srcset="./assets/img/producto5.webp" type="image/webp" />
             <img
+              class="producto__img"
               loading="lazy"
               width="500"
               height="300"
@@ -191,21 +201,22 @@
               alt=""
             />
           </picture>
-          <div class="productos__texto">
-            <h3>Producto</h3>
-            <p>
+          <div class="producto__contenido">
+            <h3 class="producto__titulo">Producto</h3>
+            <p class="producto__parrafo">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo, minus et. Quis.
             </p>
-            <p class="precio">$2,000</p>
-            <a class="btn" href="#">Agregar al carrito</a>
+            <p class="producto__precio">$2,000</p>
+            <a class="producto__btn" href="#">Agregar al carrito</a>
           </div>
         </div>
-        <div class="productos__producto">
+        <div class="producto">
           <picture>
             <source srcset="./assets/img/producto6.avif" type="image/avif" />
             <source srcset="./assets/img/producto6.webp" type="image/webp" />
             <img
+              class="producto__img"
               loading="lazy"
               width="500"
               height="300"
@@ -213,50 +224,49 @@
               alt=""
             />
           </picture>
-          <div class="productos__texto">
-            <h3>Producto</h3>
-            <p>
+          <div class="producto__contenido">
+            <h3 class="producto__titulo">Producto</h3>
+            <p class="producto__parrafo">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo, minus et. Quis.
             </p>
-            <p class="precio">$2,000</p>
-            <a class="btn" href="#">Agregar al carrito</a>
+            <p class="producto__precio">$2,000</p>
+            <a class="producto__btn" href="#">Agregar al carrito</a>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__grid container">
+      <div class="footer__grid footer__contenedor">
         <div>
-          <h3>Categorías</h3>
+          <h3 class="footer__titulo">Categorías</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Oficina</a>
-            <a class="nav__link" href="#">Jardin</a>
-            <a class="nav__link" href="#">Cochera</a>
-            <a class="nav__link" href="#">Habitación</a>
+            <a class="nav__link nav__link--footer" href="#">Oficina</a>
+            <a class="nav__link nav__link--footer" href="#">Jardin</a>
+            <a class="nav__link nav__link--footer" href="#">Cochera</a>
+            <a class="nav__link nav__link--footer" href="#">Habitación</a>
           </nav>
         </div>
         <div>
-          <h3>Nosotros</h3>
+          <h3 class="footer__titulo">Nosotros</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Historia</a>
-            <a class="nav__link" href="#">Misión</a>
-            <a class="nav__link" href="#">Valores</a>
-            <a class="nav__link" href="#">Politica de privacidad</a>
-            <a class="nav__link" href="#">Términos de servicio</a>
+            <a class="nav__link nav__link--footer" href="#">Historia</a>
+            <a class="nav__link nav__link--footer" href="#">Misión</a>
+            <a class="nav__link nav__link--footer" href="#">Valores</a>
+            <a class="nav__link nav__link--footer" href="#">Politica de privacidad</a>
+            <a class="nav__link nav__link--footer" href="#">Términos de servicio</a>
           </nav>
         </div>
         <div>
-          <h3>Soporte</h3>
+          <h3 class="footer__titulo">Soporte</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Preguntas frecuentes</a>
-            <a class="nav__link" href="#">Ayuda</a>
-            <a class="nav__link" href="#">Confianza y seguridad</a>
+            <a class="nav__link nav__link--footer" href="#">Preguntas frecuentes</a>
+            <a class="nav__link nav__link--footer" href="#">Ayuda</a>
+            <a class="nav__link nav__link--footer" href="#">Confianza y seguridad</a>
           </nav>
         </div>
       </div>
-
-      <p class="copy">Todos los derechos reservados TicoMuebles &copy;</p>
+      <p class="footer__copy">Todos los derechos reservados TicoMuebles &copy;</p>
     </footer>
   </body>
 </html>
