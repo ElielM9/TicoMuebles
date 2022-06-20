@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TicoMuebles</title>
+    <title>TicoMuebles | Nosotros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +15,12 @@
   </head>
   <body>
     <header>
-      <h1 class="titulo text-center">Tico<span>Muebles</span></h1>
+      <h1 class="header__titulo">
+        Tico<span class="header__titulo--azul">Muebles</span>
+      </h1>
     </header>
-    <div class="nav-container">
-      <nav class="nav container">
+    <div class="nav-contenedor">
+      <nav class="nav nav__contenedor">
         <a class="nav__link" href="index.html">Inicio</a>
         <a class="nav__link" href="nosotros.html">Nosotros</a>
         <a class="nav__link" href="tienda.html">Tienda</a>
@@ -28,14 +30,15 @@
       </nav>
     </div>
 
-    <main class="main container">
-      <h2 class="text-center">Sobre Nosotros</h2>
-      <div class="sobre-nosotros">
-        <div class="sobre-nosotros__img">
+    <main class="main main__contenedor">
+      <h2 class="nosotros__titulo">Sobre Nosotros</h2>
+      <div class="nosotros__grid">
+        <div>
           <picture>
             <source srcset="./assets/img/nosotros.avif" type="image/avif" />
             <source srcset="./assets/img/nosotros.webp" type="image/webp" />
             <img
+              class="nosotros__img"
               loading="lazy"
               width="500"
               height="300"
@@ -44,7 +47,7 @@
             />
           </picture>
         </div>
-        <div class="sobre-nosotros__info">
+        <div class="nosotros__texto">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
             laudantium, libero doloribus nihil similique iusto ex quaerat harum,
@@ -62,37 +65,46 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__grid container">
+      <div class="footer__grid footer__contenedor">
         <div>
-          <h3>Categorías</h3>
+          <h3 class="footer__titulo">Categorías</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Oficina</a>
-            <a class="nav__link" href="#">Jardin</a>
-            <a class="nav__link" href="#">Cochera</a>
-            <a class="nav__link" href="#">Habitación</a>
+            <a class="nav__link nav__link--footer" href="#">Oficina</a>
+            <a class="nav__link nav__link--footer" href="#">Jardin</a>
+            <a class="nav__link nav__link--footer" href="#">Cochera</a>
+            <a class="nav__link nav__link--footer" href="#">Habitación</a>
           </nav>
         </div>
         <div>
-          <h3>Nosotros</h3>
+          <h3 class="footer__titulo">Nosotros</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Historia</a>
-            <a class="nav__link" href="#">Misión</a>
-            <a class="nav__link" href="#">Valores</a>
-            <a class="nav__link" href="#">Politica de privacidad</a>
-            <a class="nav__link" href="#">Términos de servicio</a>
+            <a class="nav__link nav__link--footer" href="#">Historia</a>
+            <a class="nav__link nav__link--footer" href="#">Misión</a>
+            <a class="nav__link nav__link--footer" href="#">Valores</a>
+            <a class="nav__link nav__link--footer" href="#"
+              >Politica de privacidad</a
+            >
+            <a class="nav__link nav__link--footer" href="#"
+              >Términos de servicio</a
+            >
           </nav>
         </div>
         <div>
-          <h3>Soporte</h3>
+          <h3 class="footer__titulo">Soporte</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Preguntas frecuentes</a>
-            <a class="nav__link" href="#">Ayuda</a>
-            <a class="nav__link" href="#">Confianza y seguridad</a>
+            <a class="nav__link nav__link--footer" href="#"
+              >Preguntas frecuentes</a
+            >
+            <a class="nav__link nav__link--footer" href="#">Ayuda</a>
+            <a class="nav__link nav__link--footer" href="#"
+              >Confianza y seguridad</a
+            >
           </nav>
         </div>
       </div>
-
-      <p class="copy">Todos los derechos reservados TicoMuebles &copy;</p>
+      <p class="footer__copy">
+        Todos los derechos reservados TicoMuebles &copy;
+      </p>
     </footer>
   </body>
 </html>

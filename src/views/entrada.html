@@ -15,10 +15,12 @@
   </head>
   <body>
     <header>
-      <h1 class="titulo text-center">Tico<span>Muebles</span></h1>
+      <h1 class="header__titulo">
+        Tico<span class="header__titulo--azul">Muebles</span>
+      </h1>
     </header>
-    <div class="nav-container">
-      <nav class="nav container">
+    <div class="nav-contenedor">
+      <nav class="nav nav__contenedor">
         <a class="nav__link" href="index.html">Inicio</a>
         <a class="nav__link" href="nosotros.html">Nosotros</a>
         <a class="nav__link" href="tienda.html">Tienda</a>
@@ -27,29 +29,34 @@
         <a class="nav__link" href="contacto.html">Contacto</a>
       </nav>
     </div>
-    <main class="main container">
-      <h2 class="text-center">Guía de colores</h2>
+    <main class="main main__contenedor">
+      <article class="entrada__contenedor">
+        <h2 class="entrada__titulo entrada__titulo--contenido">Guía de colores</h2>
+        <picture>
+          <source srcset="./assets/img/nosotros.avif" type="image/avif" />
+          <source srcset="./assets/img/nosotros.webp" type="image/webp" />
+          <img
+            class="entrada__img"
+            loading="lazy"
+            width="500"
+            height="300"
+            src="./assets/img/nosotros.jpg"
+            alt=""
+          />
+        </picture>
 
-      <article class="blog__entradas contenido-entrada">
-        <div class="blog__img">
-          <picture>
-            <source srcset="./assets/img/nosotros.avif" type="image/avif" />
-            <source srcset="./assets/img/nosotros.webp" type="image/webp" />
-            <img
-              loading="lazy"
-              width="500"
-              height="300"
-              src="./assets/img/nosotros.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-        <div class="blog__contenido">
-          <div class="blog__meta">
-            <p>Fecha: <span>22 Noviembre de 2022</span></p>
-            <p>Escrito por: <span>Monserrat Mora</span></p>
+        <div class="entrada__contenido">
+          <div class="entrada__meta">
+            <p class="entrada__copy">
+              Fecha:
+              <span class="entrada__copy--color">22 Noviembre de 2022</span>
+            </p>
+            <p class="entrada__copy">
+              Escrito por:
+              <span class="entrada__copy--color">Monserrat Mora</span>
+            </p>
           </div>
-          <div class="blog__entrada">
+          <div class="entrada__texto">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               quod veritatis perferendis obcaecati quibusdam error, suscipit
@@ -98,37 +105,46 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__grid container">
+      <div class="footer__grid footer__contenedor">
         <div>
-          <h3>Categorías</h3>
+          <h3 class="footer__titulo">Categorías</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Oficina</a>
-            <a class="nav__link" href="#">Jardin</a>
-            <a class="nav__link" href="#">Cochera</a>
-            <a class="nav__link" href="#">Habitación</a>
+            <a class="nav__link nav__link--footer" href="#">Oficina</a>
+            <a class="nav__link nav__link--footer" href="#">Jardin</a>
+            <a class="nav__link nav__link--footer" href="#">Cochera</a>
+            <a class="nav__link nav__link--footer" href="#">Habitación</a>
           </nav>
         </div>
         <div>
-          <h3>Nosotros</h3>
+          <h3 class="footer__titulo">Nosotros</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Historia</a>
-            <a class="nav__link" href="#">Misión</a>
-            <a class="nav__link" href="#">Valores</a>
-            <a class="nav__link" href="#">Politica de privacidad</a>
-            <a class="nav__link" href="#">Términos de servicio</a>
+            <a class="nav__link nav__link--footer" href="#">Historia</a>
+            <a class="nav__link nav__link--footer" href="#">Misión</a>
+            <a class="nav__link nav__link--footer" href="#">Valores</a>
+            <a class="nav__link nav__link--footer" href="#"
+              >Politica de privacidad</a
+            >
+            <a class="nav__link nav__link--footer" href="#"
+              >Términos de servicio</a
+            >
           </nav>
         </div>
         <div>
-          <h3>Soporte</h3>
+          <h3 class="footer__titulo">Soporte</h3>
           <nav class="nav nav--footer">
-            <a class="nav__link" href="#">Preguntas frecuentes</a>
-            <a class="nav__link" href="#">Ayuda</a>
-            <a class="nav__link" href="#">Confianza y seguridad</a>
+            <a class="nav__link nav__link--footer" href="#"
+              >Preguntas frecuentes</a
+            >
+            <a class="nav__link nav__link--footer" href="#">Ayuda</a>
+            <a class="nav__link nav__link--footer" href="#"
+              >Confianza y seguridad</a
+            >
           </nav>
         </div>
       </div>
-
-      <p class="copy">Todos los derechos reservados TicoMuebles &copy;</p>
+      <p class="footer__copy">
+        Todos los derechos reservados TicoMuebles &copy;
+      </p>
     </footer>
   </body>
 </html>
