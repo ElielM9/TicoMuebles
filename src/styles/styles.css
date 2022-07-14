@@ -242,7 +242,7 @@ img {
       var(--azul) 50%,
       var(--azul)
     ),
-    url(../assets/img/sobre-nosotros.jpg);
+    url(../assets/img/nosotros.jpg);
   background-repeat: no-repeat;
   background-position: center top left;
   background-size: 100%, 88rem;
